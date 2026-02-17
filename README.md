@@ -1,11 +1,11 @@
 # Incident Tracker
 
-A production-grade full-stack incident management system built with Node.js, Express, TypeScript, Sequelize, MySQL, React, Vite, and Material UI.
+A production-grade full-stack incident management system built with Node.js, Express, JavaScript, Sequelize, MySQL, React, Vite, and Material UI.
 
 ## 🏗️ Architecture
 
 ### Backend
-- **Framework**: Express.js with TypeScript
+- **Framework**: Express.js with JavaScript
 - **ORM**: Sequelize
 - **Database**: MySQL
 - **Validation**: Zod
@@ -62,8 +62,8 @@ npm run seed
 npm run dev
 ```
 
-The backend will run on `http://localhost:3001`
-API documentation available at `http://localhost:3001/api-docs`
+The backend will run on `http://localhost:200`
+API documentation available at `http://localhost:2000/api-docs`
 
 ### 3. Frontend Setup
 
@@ -73,8 +73,8 @@ cd frontend
 # Install dependencies
 npm install
 
-# Create .env file (optional, defaults to http://localhost:3001)
-# VITE_API_BASE_URL=http://localhost:3001
+# Create .env file (optional, defaults to http://localhost:2000)
+# VITE_API_BASE_URL=http://localhost:2000
 
 # Start development server
 npm run dev
@@ -244,14 +244,6 @@ VITE_API_BASE_URL=http://localhost:2000
 
 ## 🛠️ Development
 
-### Code Quality
-
-- TypeScript strict mode enabled
-- ESLint configured
-- No `any` types (using JSDoc for JavaScript)
-- Proper error handling
-- Input validation on all endpoints
-
 ### Best Practices
 
 - Clean Architecture principles
@@ -266,31 +258,3 @@ VITE_API_BASE_URL=http://localhost:2000
 - API documentation available at `/api-docs` when backend is running
 - Swagger UI provides interactive API testing
 
-### Architecture Documentation
-
-To generate comprehensive architecture documentation with diagrams:
-
-1. **Quick Method**: Use the prompt in `QUICK_PROMPT.md` with ChatGPT
-2. **Detailed Method**: Use `ARCHITECTURE_DOCUMENTATION_PROMPT.md` for comprehensive docs
-3. **Conversion Guide**: See `GENERATE_DOCS.md` for PDF conversion instructions
-
-The documentation includes:
-- System architecture diagrams
-- Clean architecture layers
-- Database ERD diagrams
-- API design documentation
-- Sequence diagrams for request flows
-- Design patterns explanation
-- Logging and error handling architecture
-
-## 🤝 Contributing
-
-1. Follow the existing code structure
-2. Maintain clean architecture principles
-3. Add proper validation and error handling
-4. Write meaningful commit messages
-5. Test your changes thoroughly
-
-## 📄 License
-
-ISC
